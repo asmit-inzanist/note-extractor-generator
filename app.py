@@ -13,7 +13,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv('Gemini_Api_Key'))
 
 def find_img(prompt, image_data):
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     try:
         
         if isinstance(image_data, bytes):
